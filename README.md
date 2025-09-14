@@ -2,7 +2,7 @@
 
 **V1.0**
 
-A company named Targus made ingenious foldable keyboards back in the days - this is a small project to send keystrokes from the Stowaway Handspring version to USB via a Raspi Pico.
+A company named Think Outside made ingenious foldable keyboards back in the days - this is a small project to send keystrokes from the Stowaway Handspring version to USB via a Raspi Pico.
 
 ![GIF of keyboard unfolding](./stowawayPicoUSB.gif "Stowaway keyboard unfolding")
 
@@ -96,20 +96,7 @@ Nice-to-have:
 ### Documentation
 
 - [Raspberry Pi Pico Pinout](https://www.elektronik-kompendium.de/sites/raspberry-pi/2611051.htm)
-- [Targus Stowaway Handspring Documentation (PDF)](./stowaway_handspring.pdf) (Note: as the company no longer exists, I consider this to be abandonware) 
-
-### Working with VSC
-
-- There's a VSC extension called ["CircuitPython V2" on the VSC marketplace](https://marketplace.visualstudio.com/items?itemName=wmerkens.vscode-circuitpython-v2). 
-- Once the initialized Raspi Pico is connected, you have to set the board to "Raspberry Pi:Pico" in the selection on the lower right edge of the VSC window; then click on the connector symbol next to it and pick the correct USB interface for the Pico (it's ```/dev/tty.usbmodem2101``` on my Mac)
-- Working with CP in VSC is a bit different from MicroPython. You don't upload your files from the project folder to your device to test them - **you work on the CIRCUITPY USB drive folder** as a project folder. Every time you change the files, the extension triggers a reload and starts the ```code.py```  or ```main.py``` script; if you need to go to the REPL interface, you can do so by interrupting the program or just pressing a key once it stops. 
-- Look at the [Adafruit Tutorial for working with VSC](https://learn.adafruit.com/using-the-circuitpython-extension-for-visual-studio-code/use-the-circuitpython-extension-for-vs-code)
-
-If you like an AI to help you coding, have a look at the [VOID project](https://voideditor.com) which is an AI-enabled fork of VSC but without the annoying Copilot. Use Mistral's ```codestral``` model (there's a special API key which gives you free usage) for autocompletion, it's fast and cheap and good. 
-
-For agentic mode - i.e. "Write a routine doing this", or "Fix problems in code", working options are ```mistral-medium-3.1``` (fast and cheap) or ```claude-sonnet-4-0``` (good but not cheap). 
-
-Local models under Ollama are another good option; I like ```qwen3-coder``` very much but tool use - and thus agentic mode - does not seem to work in Void with it right now.  
+- [Think Outside Targus Stowaway Handspring Documentation (PDF)](./stowaway_handspring.pdf) (Note: as the company no longer exists, I consider this to be abandonware) 
 
 ## License
 
